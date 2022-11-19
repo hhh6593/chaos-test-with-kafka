@@ -21,4 +21,4 @@ with open("../data/u.data", "rb") as file:
             .strftime('%Y-%m-%d %H:%M:%S')
         producer.send(topicName, json.dumps(data).encode('utf-8'))
         print(data)
-        time.sleep(1)
+        time.sleep(0.05)
